@@ -1,0 +1,38 @@
+<script src="script.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Methods and Loops</title>
+</head>
+<body>
+
+    <h2>Random Numbers</h2>
+    <p id="random"></p>
+
+    <h2>Current Date</h2>
+    <p id="date"></p>
+
+    <h2>Rounded Number</h2>
+    <p id="round"></p>
+
+    <script>
+        let numbers = "";
+
+        // Loop to print 5 random numbers
+        for(let i = 1; i <= 5; i++) {
+            numbers += Math.floor(Math.random() * 100) + "<br>";
+        }
+
+        document.getElementById("random").innerHTML = numbers;
+
+        // Current date
+        let today = new Date();
+        document.getElementById("date").innerHTML = today;
+
+        // Rounded number
+        let num = 8.76;
+        document.getElementById("round").innerHTML = Math.round(num);
+    </script>
+
+</body>
+</html>
